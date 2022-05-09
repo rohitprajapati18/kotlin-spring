@@ -1,7 +1,7 @@
 package com.deqode.backend2.cloudkart.data.repository
 
 import com.deqode.backend2.cloudkart.data.entity.Product
-import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.data.mongodb.repository.MongoRepository
 
-interface ProductRepository: JpaRepository<Product, Long> {
+interface ProductRepository: MongoRepository<Product, Long> {
 }

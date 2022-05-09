@@ -1,20 +1,13 @@
 package com.deqode.backend2.cloudkart.data.entity
 
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.persistence.Table
+import org.springframework.data.annotation.Id
+import org.springframework.data.mongodb.core.mapping.Document
 
-@Entity
-@Table(name="PRODUCT")
-class Product (
+@Document(collection = "PRODUCT")
+data class Product(
     @Id
-    var id: Long,
-    @Column(name="PROUDCT_NAME")
+    var id: Long?,
     var name: String?,
-    @Column(name="CATEGORY")
     var category: String?,
-    @Column(name="SUB_CATEGORY")
     var subCategory: String?
-) {
-}
+)

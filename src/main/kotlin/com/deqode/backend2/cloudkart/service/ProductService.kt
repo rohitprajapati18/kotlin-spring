@@ -11,17 +11,14 @@ class ProductService(@Autowired val productRepository: ProductRepository) {
         return productRepository.findAll()
     }
 
-    fun getProductById(id: Long): Product{
-        return productRepository.getById(id);
+    fun getProductById(id: Long): Product?{
+        return productRepository.findById(id).get();
     }
 
-    fun addNewProduct(newProduct: Product): Product{
-        try{
-            return productRepository.save(newProduct);
-        }catch(e: Exception){
+    fun addNewProduct(newProduct: Product): Product? {
 
-        }
-
-        return Product(-1, "", "", "");
+        return productRepository.save(newProduct);
     }
+
+
 }

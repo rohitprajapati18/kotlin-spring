@@ -1,9 +1,10 @@
 package com.deqode.backend2.cloudkart
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
+@SpringBootApplication(exclude = [DataSourceAutoConfiguration::class])
 class CloudkartApplication
 
 fun main(args: Array<String>) {
