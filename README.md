@@ -3,3 +3,13 @@ cloudkart is a simple ecommerce application built on spring application using ko
 
 ### implementations so far
  - implemented mvc structure
+ - Added get and add api endpoints for adding product
+
+
+### entities
+ - Product:\
+   Product entities hold the information about the product in use
+    - id
+    - name 
+    - category
+    - subcategory
