@@ -7,15 +7,14 @@ import javax.persistence.Table
 
 @Entity
 @Table(name="PRODUCT")
-class Product(
+class Product (
     @Id
     var id: Long,
     @Column(name="PROUDCT_NAME")
-    var name: String,
+    var name: String?,
     @Column(name="CATEGORY")
-    var category: String,
+    var category: String?,
     @Column(name="SUB_CATEGORY")
-    var subCategory: String
+    var subCategory: String?
 ) {
-
 }
