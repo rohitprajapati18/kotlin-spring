@@ -7,7 +7,7 @@ cloudkart is a simple ecommerce application built on spring application using ko
 
 
 ### entities
- - Product
+ - Product:\
    Product entities hold the information about the product in use
     - id
     - name 
