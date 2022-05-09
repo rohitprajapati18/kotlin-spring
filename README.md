@@ -9,7 +9,16 @@ cloudkart is a simple ecommerce application built on spring application using ko
 ### entities
  - Product:\
    Product entities hold the information about the product in use
-    - id
-    - name 
-    - category
-    - subcategory
+    - id (Long)
+    - name (String)
+    - category (String)
+    - subcategory (String)
+ - User:\
+   Stores information about user register in the cloudkart
+   -  id (Long)
+   -  username (String)
+   -  email (String)
+   -  firstName (String)
+   -  lastName: (String)
+   -  dateOfBirth: (Date)
+   -  gender (Enum Type : Gender)
