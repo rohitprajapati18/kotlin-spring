@@ -1,0 +1,16 @@
+version: "3"
+services:
+  deqode_app:
+    container_name: deqode_app
+    build: ./
+    ports:
+      - 8012:8080
+    depends_on:
+      - mongo
+    expose:
+      - 8080
+  mongo:
+    image: mongo:latest
+    container_name: "mongo"
+    ports:
+      - 27017:27017
