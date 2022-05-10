@@ -10,6 +10,7 @@ data class User(
     var id:Int,
     var username:String,
     var email:String,
+    var password: String,
     var firstName:String?,
     var lastName:String?,
     var dateOfBirth: Date,
